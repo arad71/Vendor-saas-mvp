@@ -1,0 +1,31 @@
+{
+  "name": "vendor-saas-mvp",
+  "version": "1.0.0",
+  "description": "SaaS MVP for vendors to manage listings, track revenue, and handle scheduling",
+  "main": "start-dev.js",
+  "scripts": {
+    "start": "node start-dev.js",
+    "install-all": "npm install && cd client && npm install && cd ../server && npm install",
+    "client": "cd client && npm start",
+    "server": "cd server && npm run dev",
+    "build": "cd client && npm run build",
+    "deploy": "firebase deploy"
+  },
+  "engines": {
+    "node": ">=14.0.0"
+  },
+  "keywords": [
+    "saas",
+    "vendor",
+    "management",
+    "react",
+    "firebase",
+    "stripe"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {},
+  "devDependencies": {
+    "concurrently": "^8.0.1"
+  }
+}
